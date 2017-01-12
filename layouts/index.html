@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+{{ $backgrounds := slice "mdl-color--primary" "mdl-color--accent" }}
+<div id="hero" class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+<img src="/media/hero.png"/>
+</div>
+{{ range $i, $p := where .Data.Pages.Reverse "Section" "intro" }}
+<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet
+            {{ if eq (mod $i 2) 0 }}mdl-shadow--4dp dark {{ index $backgrounds (mod (div $i 2) (len $backgrounds)) }}{{ end }}">
+<div class="highlight">
+<h3>{{ $p.Title }}</h3>
+{{ $p.Content }}
+</div></div>
+{{ end }}
+{{ partial "footer.html" . }}

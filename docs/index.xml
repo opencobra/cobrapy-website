@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cobrapy - constraint-based metabolic modeling in Python</title>
+    <link>https://opencobra.github.io/cobrapy/index.xml</link>
+    <description>Recent content on cobrapy - constraint-based metabolic modeling in Python</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Jan 2017 03:00:00 -0600</lastBuildDate>
+    <atom:link href="https://opencobra.github.io/cobrapy/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Help</title>
+      <link>https://opencobra.github.io/cobrapy/intro/help/</link>
+      <pubDate>Thu, 12 Jan 2017 03:00:00 -0600</pubDate>
+      
+      <guid>https://opencobra.github.io/cobrapy/intro/help/</guid>
+      <description>&lt;p&gt;The documentation is browseable online at
+&lt;a href=&#34;https://cobrapy.readthedocs.org/en/stable/&#34;&gt;readthedocs&lt;/a&gt; and can
+also be
+&lt;a href=&#34;https://readthedocs.org/projects/cobrapy/downloads/&#34;&gt;downloaded&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Please use the &lt;a href=&#34;http://groups.google.com/group/cobra-pie&#34;&gt;Google
+Group&lt;/a&gt; for help.
+Alternatively, you can use
+&lt;a href=&#34;https://gitter.im/opencobra/cobrapy&#34;&gt;gitter.im&lt;/a&gt; for quick questions
+and discussions about cobrapy (faster response times).&lt;/p&gt;
+
+&lt;p&gt;More information about opencobra is available at the
+&lt;a href=&#34;http://opencobra.github.io/&#34;&gt;website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you use cobrapy in a scientific publication, please cite
+&lt;a href=&#34;http://dx.doi.org/doi:10.1186/1752-0509-7-74&#34;&gt;our publication&lt;/a&gt; :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Installation</title>
+      <link>https://opencobra.github.io/cobrapy/intro/installation/</link>
+      <pubDate>Thu, 12 Jan 2017 02:00:00 -0600</pubDate>
+      
+      <guid>https://opencobra.github.io/cobrapy/intro/installation/</guid>
+      <description>&lt;p&gt;You can install cobrapy on linux, Mac OSX and Windows with pip.&lt;/p&gt;
+
+&lt;p&gt;On Linux and Mac a simple:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip install cobra
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will be enough. On Windows substitute pip with pip.exe.&lt;/p&gt;
+
+&lt;p&gt;If you want to install all optional dependencies as well just install with&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip install cobra[all]
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is cobrapy?</title>
+      <link>https://opencobra.github.io/cobrapy/intro/description/</link>
+      <pubDate>Thu, 12 Jan 2017 01:00:00 -0600</pubDate>
+      
+      <guid>https://opencobra.github.io/cobrapy/intro/description/</guid>
+      <description>&lt;p&gt;COBRA methods are widely used for genome-scale modeling of metabolic
+networks in both prokaryotes and eukaryotes. &lt;strong&gt;cobrapy&lt;/strong&gt; is a
+constraint-based modeling package that is designed to accommodate the
+biological complexity of the next generation of COBRA models and
+provides access to commonly used COBRA methods, such as flux balance
+analysis, flux variability analysis, and gene deletion analyses.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

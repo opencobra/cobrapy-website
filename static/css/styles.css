@@ -1,0 +1,164 @@
+html > body, h1, h2, .mdl-button {
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+}
+
+a {
+	text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    padding: 5vw;
+}
+
+#hero img {
+    display: block;
+    max-width: 800px;
+    margin: auto;
+    width: 100%;
+}
+
+.mdl-cell .highlight {
+    padding: 2em;
+}
+
+.highlight {
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+}
+
+.highlight p, li {
+    font-size: 1.5em;
+    line-height: normal;
+}
+
+.dark, .dark a {
+    color: white;
+}
+
+.mdl-layout__drawer, .mdl-layout__header {
+    background-color: #fff;
+    border-right-color: #fff;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: #000;
+}
+
+.mdl-navigation .mdl-navigation__link {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+.mdl-navigation .mdl-navigation__link:hover {
+    background-color: #ccc;
+}
+
+.mdl-layout-title img {
+    width: 80%;
+    align: middle;
+    margin-top: 2em;
+}
+
+.mdl-grid {
+    padding: 0;
+    margin: 0;
+}
+
+.mdl-cell {
+    padding: 0.5vw;
+}
+
+.mdl-card {
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+    width: 100%;
+    min-height: 10px;
+    height: 100%;
+}
+
+.card .mdl-card__supporting-text {
+    padding: 1rem;
+    width: auto;
+}
+
+.mdl-card__supporting-text p, li {
+    font-size: 16px;
+}
+
+.mdl-card__supporting-text img {
+    width: 100%;
+}
+
+.card .mdl-card__title {
+	color: #fff;
+    background-color: #263238;
+	height: 120px;
+}
+
+.mdl-card__supporting-text h1 {
+    font-size: 18px;
+    line-height: normal;
+    margin: 0.25em 0;
+}
+
+.mdl-card__supporting-text h2 {
+    font-size: 16px;
+    margin: 0;
+    line-height: normal;
+    margin: 0.25em 0;
+}
+
+.mdl-card__supporting-text h3 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 0.25em 0;
+}
+
+.mdl-card__actions {
+    margin-top: auto;
+}
+
+.mdl-button--primary img {
+	margin: auto 0.5em auto 0;
+}
+
+.mdl-mini-footer {
+    padding: 1em;
+}
+
+.mdl-mini-footer a {
+    font-weight: bold;
+    color: #ddd;
+}
+
+.mdl-mini-footer a:hover {
+    color: #fff;
+}
+
+#back {
+	margin: 5px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spaced {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+.mdl-layout__tab-bar {
+    width: calc(100% - 120px);
+    padding: 0 0 0 60px;
+}
+}
+
+.mdl-button {
+    font-weight: bold;
+}

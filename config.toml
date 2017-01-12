@@ -1,0 +1,8 @@
+languageCode = "en-us"
+title = "cobrapy - constraint-based metabolic modeling in Python"
+baseURL = "https://opencobra.github.io/cobrapy"
+relativeURLs = true
+
+[params]
+    mdlversion = "1.3.0"
+    mdltheme = "teal-indigo"
