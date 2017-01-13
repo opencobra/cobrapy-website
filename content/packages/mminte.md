@@ -1,7 +1,6 @@
 +++
-title = "mminte"
+title = "MMinte"
 repo = "https://github.com/mendessoares/MMinte"
-name = "MMinte"
 date = "2017-01-13T11:00:05-06:00"
 owner = "Helena Mendes Soares"
 website = ""

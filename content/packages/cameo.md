@@ -1,7 +1,6 @@
 +++
 title = "cameo"
 repo = "https://github.com/biosustain/cameo"
-name = "cameo"
 date = "2017-01-13T11:00:01-06:00"
 owner = "Biosustain"
 website = "https://cameo.eu"
