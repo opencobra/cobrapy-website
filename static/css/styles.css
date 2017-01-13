@@ -28,7 +28,8 @@ a {
     max-width: 600px;
 }
 
-.highlight p, li {
+.highlight p, li, code {
+    font-weight: 300;
     font-size: 1.5em;
     line-height: normal;
 }
@@ -64,7 +65,7 @@ a {
 
 .mdl-grid {
     padding: 0;
-    margin: 0;
+    max-width: 1400px;
 }
 
 .mdl-cell {
@@ -78,17 +79,9 @@ a {
     height: 100%;
 }
 
-.card .mdl-card__supporting-text {
+.mdl-card__supporting-text {
     padding: 1rem;
     width: auto;
-}
-
-.mdl-card__supporting-text p, li {
-    font-size: 16px;
-}
-
-.mdl-card__supporting-text img {
-    width: 100%;
 }
 
 .card .mdl-card__title {
@@ -149,7 +142,34 @@ table {
 
 .spaced {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em 2em;
+}
+
+.tags a {
+    margin: 1em 0.5em;
+}
+
+.mdl-badge[data-badge]:after {
+    width: 18px;
+    height: 18px;
+    right: -18px;
+    top: -8px;
+}
+
+.spaced img {
+    margin: 5px 1em 5px 0;
+}
+
+.mdl-layout__tab-bar, .mdl-layout__tab-bar-button {
+    background-color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
