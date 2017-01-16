@@ -84,12 +84,6 @@ a {
     width: auto;
 }
 
-.card .mdl-card__title {
-	color: #fff;
-    background-color: #263238;
-	height: 120px;
-}
-
 .mdl-card__supporting-text h1 {
     font-size: 18px;
     line-height: normal;
@@ -150,7 +144,6 @@ table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin: 2em 2em;
 }
 
 .tags a {

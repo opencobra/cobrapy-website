@@ -1,9 +1,19 @@
-{{ partial "header_tags.html" . }}
-<div class="mdl-cell mdl-cell--12-col tags">
+{{ partial "header_no_grid.html" . }}
+<div class="page-content mdl-grid">
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+<div class="mdl-tabs__tab-bar">
+  <a href="/packages" class="mdl-tabs__tab">All</a>
+  <a href="#tags" class="mdl-tabs__tab is-active">By Tag</a>
+</div>
+<section class="mdl-tabs__panel is-active" id="tags">
+<div class="mdl-cell mdl-cell--12-col ">
+<div class="mdl-card mdl-shadow--4dp"><div class="mdl-card__supporting-text tags">
 {{ range .Site.Taxonomies.tags.ByCount }}
 <a href="/tags/{{ .Name | urlize }}"class="mdl-badge {{ if ne $.Title (.Name | urlize) }}mdl-color-text--grey-500{{ end }}" data-badge="{{ .Count }}">{{ .Name }}</a>
 {{ end }}
-</div>
+</div></div></div>
+</section></div>
+
 {{ range .Pages.ByLinkTitle.Reverse }}
 {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
@@ -28,4 +38,5 @@
     href="{{ .Params.repo }}"><i class="material-icons">code</i>&nbsp;Repository</a>
 </div></div></div>
 {{ end }}
-{{ partial "footer.html" . }}
+</div>
+{{ partial "footer_no_grid.html" . }}

@@ -4,20 +4,32 @@
     <div class="mdl-card__title mdl-color--indigo-900" style="height:auto">
     <div class="mdl-card__title-text mdl-color-text--white">Publications</div>
 </div></div></div>
-{{ range .Pages }}
-<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-tabs__tab-bar">
+      {{ range $i, $p := .Data.Pages.GroupByDate "2006" }}
+      <a href="#year_{{$p.Key}}" class="mdl-tabs__tab {{if eq $i 0}}is-active{{end}}">{{$p.Key}}</a>
+      {{end}}
+  </div>
+{{ range $i, $p := .Data.Pages.GroupByDate "2006" }}
+<div class="mdl-tabs__panel {{if eq $i 0}}is-active{{end}}" id="year_{{$p.Key}}">
+<br>
+{{ range $p.Pages }}
+<div class="mdl-cell mdl-cell--12-col">
 <div class="mdl-card mdl-shadow--4dp">
 <div class="mdl-card__supporting-text">
 <h1 class="mdl-color-text--accent">{{ .Title }}</h1>
 <h3 class="mdl-color-text--gray">{{ title .Params.journal }}&nbsp;{{ .Date.Year }}</h3>
-<h2 class="mdl-color-text--primary">{{ delimit .Params.authors ", " " and "}}</h2>
+{{ if gt (len .Params.authors) 4 }}{{ $.Scratch.Set "authors" (print (delimit (first 4 .Params.authors) ", ") ", et. al.")}}
+{{ else }}{{ $.Scratch.Set "authors" (delimit .Params.authors ", " " and ") }}{{ end }}
+<h2 class="mdl-color-text--primary">{{ $.Scratch.Get "authors" }}</h2>
 {{ if .Content }}<p>{{ .Summary }}</p>{{ end }}
 </div>
 <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="https://doi.org/{{.Params.doi}}">Full Article</a>
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="https://www.ncbi.nlm.nih.gov/pubmed/{{.Params.pubmed}}">PubMed</a>
 </div>
-</div>
-</div>
+</div></div>
 {{end}}
+</div>
+{{end}}</div>
 {{ partial "footer.html" . }}

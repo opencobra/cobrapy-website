@@ -1,10 +1,25 @@
-{{ partial "header_all.html" . }}
+{{ partial "header_no_grid.html" . }}
+<div class="page-content mdl-grid">
+<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+<div class="mdl-tabs__tab-bar">
+  <a href="#all" class="mdl-tabs__tab is-active">All</a>
+  <a href="#tags" class="mdl-tabs__tab">By Tag</a>
+</div>
+<section class="mdl-tabs__panel is-active" id="all">
 <div class="mdl-cell mdl-cell--12-col">
     <div class="mdl-card mdl-shadow--4dp">
     <div class="mdl-card__title mdl-color--indigo-900" style="height:auto">
-    <div class="mdl-card__title-text mdl-color-text--white">Packages</div>
+    <div class="mdl-card__title-text mdl-color-text--white">Packages</div></div>
+</div></div></section>
+<section class="mdl-tabs__panel" id="tags">
+<div class="mdl-cell mdl-cell--12-col ">
+<div class="mdl-card mdl-shadow--4dp"><div class="mdl-card__supporting-text tags">
+{{ range .Site.Taxonomies.tags.ByCount }}
+<a href="/tags/{{ .Name | urlize }}"class="mdl-badge mdl-color-text--grey-500" data-badge="{{ .Count }}">{{ .Name }}</a>
+{{ end }}
 </div></div></div>
-<div class="mdl-cell mdl-cell--12-col"><p>Here you find a list of packages that use cobrapy.</p></div>
+</section></div>
+
 {{ range .Pages.ByLinkTitle.Reverse }}
 {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
@@ -30,4 +45,4 @@
 </div></div></div>
 {{ end }}
 </div>
-{{ partial "footer.html" . }}
+{{ partial "footer_no_grid.html" . }}
