@@ -34,9 +34,9 @@
 <img src="https://img.shields.io/github/stars/{{$repo}}.svg?style=social&label=Star"/>
 </span>
 {{ end }}</span>
+<p class="mdl-typography--caption" style="margin-top: .5em">Tags: {{ delimit (apply .Params.tags "partial" "tag_link" ".") ", "}}</p>
 <br>
 <p>{{ .Summary }}</p>
-<p>Tags: {{ delimit (apply .Params.tags "partial" "tag_link" ".") ", "}}</p>
 </div>
 <div class="mdl-card__actions mdl-card--border">
 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
