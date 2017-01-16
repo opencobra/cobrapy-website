@@ -29,7 +29,7 @@ cd cobrapy_website
 hugo server
 ```
 
-This will serve the website on http://localhost:1313 and will rebuild the site automaticaly everytime you change any of the files.
+This will serve the website on http://localhost:1313/cobrapy and will rebuild the site automaticaly everytime you change any of the files.
 
 The actual Markdown content can be found in the `content` folder. `intro` are the sections shown on the Homepage, `packages` are the software packages using cobrapy and `pubs` are the publications (automatically generated using the `pubmed_to_hugo.py` script from a Pubmed XML).
 
