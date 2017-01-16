@@ -23,6 +23,7 @@
 {{ else }}{{ $.Scratch.Set "authors" (delimit .Params.authors ", " " and ") }}{{ end }}
 <h2 class="mdl-color-text--primary">{{ $.Scratch.Get "authors" }}</h2>
 {{ if .Content }}<p>{{ .Summary }}</p>{{ end }}
+{{ if .Keywords }}<p>Keywords: {{ delimit .Keywords ", " | title }}</p>{{ end }}
 </div>
 <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="https://doi.org/{{.Params.doi}}">Full Article</a>

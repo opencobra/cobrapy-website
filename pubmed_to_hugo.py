@@ -8,6 +8,7 @@ what = "article"
 doi = "{{doi}}"
 pubmed = "{{pmid}}"
 date = "{{date}}"
+keywords = [{{keywords}}]
 +++
 
 {{abstract}}"""
@@ -34,6 +35,9 @@ if __name__ == "__main__":
             '"' + x.find("ForeName").text + " " + x.find("LastName").text + '"'
             for x in child.findall(".//Author")
             ])
+        article["keywords"] = ", ".join([
+            '"' + x.text + '"' for x in child.findall(".//Keyword")
+            ])
         article["doi"] = child.find(
             ".//ArticleId[@IdType='doi']").text
         article["journal"] = child.find(".//Journal/Title").text
@@ -41,7 +45,7 @@ if __name__ == "__main__":
         article["date"] = da(int(date.find("Year").text),
                              int(date.find("Month").text),
                              int(date.find("Day").text)).isoformat()
-        print(article)
+        print(article["keywords"])
         filename = "content/pubs/PM{}.md".format(article["pmid"])
         if not exists(filename):
             with open(filename, "w") as f:
