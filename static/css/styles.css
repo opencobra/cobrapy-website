@@ -8,7 +8,7 @@ a {
 }
 
 #hero {
-    padding-top: 2vw;
+    padding: 5vw 5vw 0vw 5vw;
 }
 
 #hero img {
@@ -19,11 +19,11 @@ a {
 }
 
 .mdl-cell .highlight {
-    padding: 0em;
+    padding: 2em;
 }
 
 .highlight {
-    text-align: justify;
+    text-align: center;
     margin: auto;
     max-width: 700px;
 }
@@ -75,7 +75,7 @@ a {
 
 .mdl-grid {
     padding: 0;
-    max-width: 800px;
+    max-width: 1400px;
 }
 
 .mdl-cell {
@@ -185,7 +185,3 @@ table {
 .mdl-button {
     font-weight: bold;
 }
-
-body > div > div > main > div > div:nth-child(3) > div {
-  max-width: 800px;
-  }
