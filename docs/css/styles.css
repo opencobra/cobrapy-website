@@ -13,7 +13,7 @@ a {
 
 #hero img {
     display: block;
-    max-width: 800px;
+    max-width: 400px;
     margin: auto;
     width: 100%;
 }
@@ -65,7 +65,7 @@ a {
 
 .mdl-grid {
     padding: 0;
-    max-width: 1400px;
+    max-width: 800px;
 }
 
 .mdl-cell {

@@ -8,12 +8,12 @@ a {
 }
 
 #hero {
-    padding: 5vw;
+    padding: 5vw 5vw 0vw 5vw;
 }
 
 #hero img {
     display: block;
-    max-width: 800px;
+    max-width: 500px;
     margin: auto;
     width: 100%;
 }
@@ -25,13 +25,23 @@ a {
 .highlight {
     text-align: center;
     margin: auto;
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .highlight p, li, code {
     font-weight: 300;
     font-size: 1.5em;
     line-height: 125%;
+}
+
+.highlight code.language-python {
+    font-weight: 300;
+    font-size: 1.0em;
+    line-height: 100%;
+}
+
+.highlight pre.language-python {
+    margin-bottom: 2em;
 }
 
 .dark, .dark a {
