@@ -1,5 +1,5 @@
 +++
-date = "2017-01-12T03:00:00-06:00"
+weight = 2
 title = "Installation"
 +++
 
@@ -18,3 +18,5 @@ If you want to install all optional dependencies as well just install with
 ```
 $ pip install cobra[all]
 ```
+
+For futher help refer to the [detailed installation instructions](https://github.com/opencobra/cobrapy/blob/devel/INSTALL.rst).

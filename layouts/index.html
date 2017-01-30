@@ -3,7 +3,7 @@
 <div id="hero" class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 <img src="/media/hero.png"/>
 </div>
-{{ range $i, $p := where .Data.Pages.Reverse "Section" "intro" }}
+{{ range $i, $p := where .Data.Pages "Section" "intro" }}
 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet
             {{ if eq (mod $i 2) 1 }}mdl-shadow--4dp dark {{ index $backgrounds (mod (div $i 2) (len $backgrounds)) }}{{ end }}">
 <div class="highlight">
