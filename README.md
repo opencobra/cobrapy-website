@@ -25,7 +25,7 @@ git clone https://github.com/opencobra/cobrapy-website
 You can start the live web server with
 
 ```
-cd cobrapy_website
+cd cobrapy-website
 hugo server
 ```
 
