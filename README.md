@@ -8,7 +8,7 @@ This is a basic mockup for the new cobrapy website. It uses a lighter design fol
 
 ## Dev setup
 
-The site itself is build with [Hugo](http://gohugo.io). Please see the [Hugo Docs](http://gohugo.io/overview/introduction/) for a general introduction. 
+The site itself is build with [Hugo](http://gohugo.io). Please see the [Hugo Docs](http://gohugo.io/overview/introduction/) for a general introduction.
 
 ### Installing Hugo
 
@@ -19,7 +19,7 @@ Hugo is a single binary that can be downloaded for a large set of platforms from
 After installing hugo clone the website source with
 
 ```bash
-git clone https://github.com/cdiener/cobrapy_website
+git clone https://github.com/opencobra/cobrapy-website
 ```
 
 You can start the live web server with
