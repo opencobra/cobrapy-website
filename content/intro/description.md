@@ -1,6 +1,11 @@
 +++
 weight = 1
 +++
+[![GitHub stars]
+(https://img.shields.io/github/stars/opencobra/cobrapy.svg?style=social&label=Star)](https://github.com/opencobra/cobrapy)
+[![GitHub contributors](https://img.shields.io/github/contributors/opencobra/cobrapy.svg)](https://github.com/opencobra/cobrapy/graphs/contributors)
+[![GitHub release](https://img.shields.io/github/release/opencobra/cobrapy.svg)](/releases)
+
 
 **cobrapy** is a python package that provides a simple interface to metabolic constraint-based reconstruction and analysis.
 

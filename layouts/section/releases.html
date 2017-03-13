@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+<div class="mdl-cell mdl-cell--12-col">
+    <div class="mdl-card mdl-shadow--4dp">
+    <div class="mdl-card__title mdl-color--indigo-900" style="height:auto">
+    <div class="mdl-card__title-text mdl-color-text--white">Releases</div>
+</div></div></div>
+{{ range .Data.Pages }}
+<div class="mdl-cell mdl-cell--6-col">
+<div class="mdl-card mdl-shadow--4dp">
+<div class="mdl-card__supporting-text">
+<h1 class="mdl-color-text--accent header">{{ .Title }}</h1><br>
+{{ if .Content }}<p>{{ .Summary }}{{ end }}
+</div>
+<div class="mdl-card__actions mdl-card--border">
+    {{ if .Content }}<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="{{.Permalink}}">Read more</a>{{ end }}
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="https://github.com/opencobra/cobrapy/releases/tag/{{.Title}}">See on Github</a>
+</div>
+</div></div>
+{{end}}
+{{ partial "footer.html" . }}

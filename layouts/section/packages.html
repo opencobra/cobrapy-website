@@ -25,8 +25,8 @@
 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 <div class="mdl-card mdl-shadow--4dp">
 <div class="mdl-card__supporting-text">
-<h1 class="mdl-color-text--accent">{{ .Title }}</h1>
-<span class="spaced"><h2 class="mdl-color-text--primary">by {{ .Params.owner }}</h2>
+<h1 class="mdl-color-text--accent header">{{ .Title }}</h1>
+<span class="spaced"><h2 class="mdl-color-text--primary header">by {{ .Params.owner }}</h2>
 {{ if $is_github }}
 {{ $repo := index (split .Params.repo "github.com/") 1}}
 <span>

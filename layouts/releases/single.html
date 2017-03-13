@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+<div class="mdl-cell mdl-cell--12-col">
+<a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect back" href="/{{.Section}}" id="back">
+<i class="material-icons">arrow_back</i></a>
+<span class="mdl-tooltip mdl-tooltip--right" for="back">Return to {{ .Section | title }}...</span>
+<p></p>
+<div class="mdl-card mdl-shadow--4dp">
+<div class="mdl-card__supporting-text">
+<h1 class="mdl-color-text--accent header">{{ .Title }}</h1>
+<h2 class="mdl-color-text--primary header">by {{ .Params.author }}</h2><br>
+<div>{{ if .Content }}{{ .Content }}{{ else }}No description needed.{{ end }}</div>
+</div>
+<div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="https://github.com/opencobra/cobrapy/releases/tag/{{.Title}}">See on Github</a>
+</div>
+</div></div>
+{{ partial "footer.html" . }}

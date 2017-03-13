@@ -17,11 +17,11 @@
 <div class="mdl-cell mdl-cell--12-col">
 <div class="mdl-card mdl-shadow--4dp">
 <div class="mdl-card__supporting-text">
-<h1 class="mdl-color-text--accent">{{ .Title }}</h1>
-<h3 class="mdl-color-text--gray">{{ title .Params.journal }}&nbsp;{{ .Date.Year }}</h3>
+<h1 class="mdl-color-text--accent header">{{ .Title }}</h1>
+<h3 class="mdl-color-text--gray header">{{ title .Params.journal }}&nbsp;{{ .Date.Year }}</h3>
 {{ if gt (len .Params.authors) 4 }}{{ $.Scratch.Set "authors" (print (delimit (first 4 .Params.authors) ", ") ", et. al.")}}
 {{ else }}{{ $.Scratch.Set "authors" (delimit .Params.authors ", " " and ") }}{{ end }}
-<h2 class="mdl-color-text--primary">{{ $.Scratch.Get "authors" }}</h2>
+<h2 class="mdl-color-text--primary header">{{ $.Scratch.Get "authors" }}</h2>
 <p class="mdl-typography--caption" style="margin-top: .5em">{{ if .Keywords }}Keywords: {{ delimit .Keywords ", " | title }}{{ end }}</p>
 {{ if .Content }}<p>{{ .Summary }}</p>{{ end }}
 </div>
