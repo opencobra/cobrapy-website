@@ -3,7 +3,7 @@ title = "cameo"
 repo = "https://github.com/biosustain/cameo"
 date = "2017-01-13T11:00:01-06:00"
 owner = "Biosustain"
-website = "https://cameo.eu"
+website = "https://cameo.bio"
 tags = ["Synthetic Biology", "strain design", "general modeling"]
 +++
 
