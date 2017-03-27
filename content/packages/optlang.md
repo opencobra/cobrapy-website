@@ -4,7 +4,7 @@ repo = "https://github.com/biosustain/optlang"
 date = "2017-01-13T11:00:01-06:00"
 owner = "Biosustain"
 website = "http://optlang.readthedocs.io"
-tags = ["Mathematical modeling", "general modeling"]
+tags = ["mathematical modeling", "general modeling"]
 +++
 
 Optlang is a Python package for solving mathematical optimization

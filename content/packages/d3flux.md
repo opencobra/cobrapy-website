@@ -1,6 +1,6 @@
 +++
 website = "https://pstjohn.github.io/d3flux/"
-title = "D3flux"
+title = "d3flux"
 repo = "https://github.com/pstjohn/d3flux"
 date = "2017-01-13T11:00:03-06:00"
 owner = "Peter St. John"
