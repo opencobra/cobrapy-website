@@ -13,6 +13,12 @@ keywords = [{{keywords}}]
 
 {{abstract}}"""
 
+
+def text_or_default(node, el, default):
+    res = node.find(el)
+    return res.text if res else default
+
+
 if __name__ == "__main__":
     import xml.etree.ElementTree as ET
     from sys import argv
@@ -41,7 +47,11 @@ if __name__ == "__main__":
         article["doi"] = child.find(
             ".//ArticleId[@IdType='doi']").text
         article["journal"] = child.find(".//Journal/Title").text
-        date = child.find(".//PubMedPubDate[@PubStatus='pubmed']")
+        date = child.find(".//ArticleDate")
+        if not date:
+            date = child.find(".//PubMedPubDate[@PubStatus='pubmed']")
+        month = text_or_default(date, "Month", "1")
+        day = text_or_default(date, "Day", "1")
         article["date"] = da(int(date.find("Year").text),
                              int(date.find("Month").text),
                              int(date.find("Day").text)).isoformat()
