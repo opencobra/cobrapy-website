@@ -22,27 +22,40 @@
 
 {{ range .Pages.ByTitle }}
 {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
+{{ if $is_github }}
+{{ $repo := index (split .Params.repo "github.com/") 1}}
+{{ $data_github := getJSON "http://api.github.com/repos/" $repo }}
+{{ $.Scratch.Set "stars" $data_github.stargazers_count }}
+{{ else }}
+{{ $.Scratch.Set "stars"  0 }}
+{{ end }}
+{{ $.Scratch.Add "packages" (slice (dict "page" . "stars" ($.Scratch.Get "stars")))}}
+{{ end }}
+
+{{ range (sort ($.Scratch.Get "packages") "stars" "desc") }}
+{{ $p := .page }}
+{{ $is_github := ge (len (findRE "github.com" $p.Params.repo)) 1 }}
 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 <div class="mdl-card mdl-shadow--4dp">
 <div class="mdl-card__supporting-text">
-<h1 class="mdl-color-text--accent header">{{ .Title }}</h1>
-<span class="spaced"><h2 class="mdl-color-text--primary header">by {{ .Params.owner }}</h2>
+<h1 class="mdl-color-text--accent header">{{ $p.Title }}</h1>
+<span class="spaced"><h2 class="mdl-color-text--primary header">by {{ $p.Params.owner }}</h2>
 {{ if $is_github }}
-{{ $repo := index (split .Params.repo "github.com/") 1}}
+{{ $repo := index (split $p.Params.repo "github.com/") 1}}
 <span>
 <img src="https://img.shields.io/github/license/{{$repo}}.svg"/>
 <img src="https://img.shields.io/github/stars/{{$repo}}.svg?style=social&label=Star"/>
 </span>
 {{ end }}</span>
-<p class="mdl-typography--caption" style="margin-top: .5em">Tags: {{ delimit (apply .Params.tags "partial" "tag_link" ".") ", "}}</p>
+<p class="mdl-typography--caption" style="margin-top: .5em">Tags: {{ delimit (apply $p.Params.tags "partial" "tag_link" ".") ", "}}</p>
 <br>
-{{ .Content }}
+{{ $p.Content }}
 </div>
 <div class="mdl-card__actions mdl-card--border">
 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
-    href="{{ .Params.website }}"><i class="material-icons">link</i>&nbsp;Webpage</a>
+    href="{{ $p.Params.website }}"><i class="material-icons">link</i>&nbsp;Webpage</a>
 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
-    href="{{ .Params.repo }}"><i class="material-icons">code</i>&nbsp;Repository</a>
+    href="{{ $p.Params.repo }}"><i class="material-icons">code</i>&nbsp;Repository</a>
 </div></div></div>
 {{ end }}
 </div>
