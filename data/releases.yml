@@ -1,0 +1,28 @@
+major:
+    description: |
+        This is a stable release. It may include new functionality or
+        backwards-incompatible changes.
+    color: mdl-color-text--indigo-800
+minor:
+    description: |
+        Currently, this is a stable release. It may include new functionality
+        or backwards-incompatible changes.
+    color: mdl-color-text--teal-600
+patch:
+    description: |
+        This is a bug fix release. It is considered stable and does not include
+        new features. All changes are backwards-compatible.
+    color: mdl-color-text--indigo-800
+alpha:
+    description: |
+        This is an experimental release. It may still lack features or fixes.
+        It is not considered stable but you are invited to test it and give
+        feedback.
+    color: mdl-color-text--deep-orange-600
+beta:
+    description: |
+        This is an experimental release. It does include all new features but
+        may still require fixes. It is not considered stable but it is the
+        candidate for the next stable release. You are invited to test it and
+        give feedback.
+    color: mdl-color-text--deep-purple-400
