@@ -5,7 +5,7 @@ title = "micom"
 date = "2017-03-27T11:52:51-06:00"
 owner = "Christian Diener"
 website = "https://cdiener.github.io/micom"
-tags = ["microbiota", "micobiome", "community modeling"]
+tags = ["microbiota", "microbiome", "community modeling"]
 +++
 
 micom is a Python package for metabolic modeling of microbial communities.
