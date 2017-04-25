@@ -34,3 +34,18 @@ This will serve the website on http://localhost:1313/cobrapy and will rebuild th
 The actual Markdown content can be found in the `content` folder. `intro` are the sections shown on the Homepage, `packages` are the software packages using cobrapy and `pubs` are the publications (automatically generated using the `pubmed_to_hugo.py` script from a Pubmed XML).
 
 Templates and logic are contained in the `layouts` folder as detailed in the Hugo Docs.
+
+
+### Adding publications, packages or releases
+
+For all of those sections the workflow is basically the same. To add an item
+to a section (`section in ['pubs', 'releases', 'packages']`)
+
+- create a new markdown file in `content/section` (this can also be done by
+  running `hugo new section/myfile.md`)
+- fill in the required fields as in the templates in `archetypes/section.md`
+- run `hugo server` to see if everything looks good
+- commit your changes and open a PR to this repo
+
+The `articles.xml` holds the XMl output from all recent pubmed publications
+citing cobrapy. You can ignore this file if adding publications by hand.
