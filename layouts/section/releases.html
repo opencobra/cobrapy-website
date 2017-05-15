@@ -9,8 +9,8 @@
 <div class="mdl-cell mdl-cell--6-col">
 <div class="mdl-card mdl-shadow--4dp">
 <div class="mdl-card__supporting-text">
-<span class="spaced"><h1 class="mdl-color-text--accent header"><a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="https://github.com/opencobra/cobrapy/releases/tag/{{.Title}}">{{ .Title }}</h1></a>
-<h2 class="{{$info.color}}">{{ .Params.release }} release</h2></span>
+<span class="spaced"><a href="https://github.com/opencobra/cobrapy/releases/tag/{{.Title}}"><h1 class="mdl-color-text--accent header">{{ .Title }}</h1></a>
+<h2 class="{{$info.color}} header">{{ .Params.release }} release</h2></span>
 <p class="mdl-typography--caption mdl-color-text--grey-500">{{ $info.description }}</p>
 {{ if .Content }}{{ if .Truncated }}<p>{{ .Summary }}</p>{{ else }}{{ .Content }}{{ end }}{{ end }}
 </div>
