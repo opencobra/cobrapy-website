@@ -5,13 +5,13 @@ major:
     color: mdl-color-text--indigo-800
 minor:
     description: |
-        Currently, this is a stable release. It may include new functionality
+        This is a stable release. It may include new functionality
         or backwards-incompatible changes.
     color: mdl-color-text--teal-600
 patch:
     description: |
-        This is a bug fix release. It is considered stable and does not include
-        new features. All changes are backwards-compatible.
+        This is a bug fix release. It is considered stable but does not include
+        any significant new features. All changes are backwards-compatible.
     color: mdl-color-text--indigo-800
 alpha:
     description: |

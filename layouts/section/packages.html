@@ -38,7 +38,7 @@
 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 <div class="mdl-card mdl-shadow--4dp">
 <div class="mdl-card__supporting-text">
-<h1 class="mdl-color-text--accent header">{{ $p.Title }}</h1>
+<a href="{{ $p.Params.website }}"><h1 class="mdl-color-text--accent header">{{ $p.Title }}</h1></a>
 <span class="spaced"><h2 class="mdl-color-text--primary header">by {{ $p.Params.owner }}</h2>
 {{ if $is_github }}
 {{ $repo := index (split $p.Params.repo "github.com/") 1}}
@@ -52,8 +52,6 @@
 {{ $p.Content }}
 </div>
 <div class="mdl-card__actions mdl-card--border">
-<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
-    href="{{ $p.Params.website }}"><i class="material-icons">link</i>&nbsp;Webpage</a>
 <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
     href="{{ $p.Params.repo }}"><i class="material-icons">code</i>&nbsp;Repository</a>
 </div></div></div>
