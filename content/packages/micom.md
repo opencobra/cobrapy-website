@@ -1,6 +1,5 @@
 +++
 repo = "https://github.com/cdiener/micom"
-name = "micom"
 title = "micom"
 date = "2017-03-27T11:52:51-06:00"
 owner = "Christian Diener"

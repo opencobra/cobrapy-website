@@ -1,7 +1,6 @@
 +++
 owner = "The Novo Nordisk Foundation Center for Biosustainability"
 website = "https://dd-decaf.eu"
-name = "DD-DeCaF"
 date = "2017-03-27T11:52:33-06:00"
 title = "dd-decaf"
 tags = ["strain design", "cell factories", "web app"]
