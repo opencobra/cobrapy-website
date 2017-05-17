@@ -4,7 +4,6 @@ owner = "Zachary A. King"
 title = "escher"
 website = "https://escher.github.io/"
 repo = "https://github.com/zakandrewking/escher"
-name = "escher"
 tags = ["visualization"]
 +++
 

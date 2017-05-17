@@ -1,6 +1,5 @@
 +++
 title = "corda"
-name = "CORDA"
 date = "2017-03-27T11:52:47-06:00"
 owner = "Christian Diener"
 website = "https://cdiener.github.io/corda"
