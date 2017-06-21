@@ -1,5 +1,920 @@
 <PubmedArticleList>
     <PubmedArticle>
+        <MedlineCitation Status="In-Process" Owner="NLM">
+            <PMID Version="1">28453682</PMID>
+            <DateCreated>
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>28</Day>
+            </DateCreated>
+            <DateRevised>
+                <Year>2017</Year>
+                <Month>05</Month>
+                <Day>05</Day>
+            </DateRevised>
+            <Article PubModel="Print">
+                <Journal>
+                    <ISSN IssnType="Electronic">1367-4811</ISSN>
+                    <JournalIssue CitedMedium="Internet">
+                        <Volume>33</Volume>
+                        <Issue>9</Issue>
+                        <PubDate>
+                            <Year>2017</Year>
+                            <Month>May</Month>
+                            <Day>01</Day>
+                        </PubDate>
+                    </JournalIssue>
+                    <Title>Bioinformatics (Oxford, England)</Title>
+                    <ISOAbbreviation>Bioinformatics</ISOAbbreviation>
+                </Journal>
+                <ArticleTitle>DistributedFBA.jl: high-level, high-performance flux balance analysis in Julia.</ArticleTitle>
+                <Pagination>
+                    <MedlinePgn>1421-1423</MedlinePgn>
+                </Pagination>
+                <ELocationID EIdType="doi" ValidYN="Y">10.1093/bioinformatics/btw838</ELocationID>
+                <Abstract>
+                    <AbstractText Label="Motivation" NlmCategory="UNASSIGNED">Flux balance analysis and its variants are widely used methods for predicting steady-state reaction rates in biochemical reaction networks. The exploration of high dimensional networks with such methods is currently hampered by software performance limitations.</AbstractText>
+                    <AbstractText Label="Results" NlmCategory="UNASSIGNED">DistributedFBA.jl is a high-level, high-performance, open-source implementation of flux balance analysis in Julia. It is tailored to solve multiple flux balance analyses on a subset or all the reactions of large and huge-scale networks, on any number of threads or nodes.</AbstractText>
+                    <AbstractText Label="Availability and Implementation" NlmCategory="UNASSIGNED">The code is freely available on github.com/opencobra/COBRA.jl. The documentation can be found at opencobra.github.io/COBRA.jl.</AbstractText>
+                    <AbstractText Label="Contact" NlmCategory="UNASSIGNED">ronan.mt.fleming@gmail.com.</AbstractText>
+                    <AbstractText Label="Supplementary information" NlmCategory="UNASSIGNED">Supplementary data are available at Bioinformatics online.</AbstractText>
+                </Abstract>
+                <AuthorList CompleteYN="Y">
+                    <Author ValidYN="Y">
+                        <LastName>Heirendt</LastName>
+                        <ForeName>Laurent</ForeName>
+                        <Initials>L</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>University of Luxembourg, Luxembourg Centre for Systems Biomedicine, Esch-sur-Alzette, Luxembourg.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Thiele</LastName>
+                        <ForeName>Ines</ForeName>
+                        <Initials>I</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>University of Luxembourg, Luxembourg Centre for Systems Biomedicine, Esch-sur-Alzette, Luxembourg.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Fleming</LastName>
+                        <ForeName>Ronan M T</ForeName>
+                        <Initials>RMT</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>University of Luxembourg, Luxembourg Centre for Systems Biomedicine, Esch-sur-Alzette, Luxembourg.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                </AuthorList>
+                <Language>eng</Language>
+                <PublicationTypeList>
+                    <PublicationType UI="D016428">Journal Article</PublicationType>
+                </PublicationTypeList>
+            </Article>
+            <MedlineJournalInfo>
+                <Country>England</Country>
+                <MedlineTA>Bioinformatics</MedlineTA>
+                <NlmUniqueID>9808944</NlmUniqueID>
+                <ISSNLinking>1367-4803</ISSNLinking>
+            </MedlineJournalInfo>
+            <CommentsCorrectionsList>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>BMC Syst Biol. 2013 Aug 08;7:74</RefSource>
+                    <PMID Version="1">23927696</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Proc Natl Acad Sci U S A. 2007 Feb 6;104(6):1777-82</RefSource>
+                    <PMID Version="1">17267599</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Biotechnol. 2013 May;31(5):419-25</RefSource>
+                    <PMID Version="1">23455439</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Gut Microbes. 2015;6(2):120-30</RefSource>
+                    <PMID Version="1">25901891</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Protoc. 2011 Aug 04;6(9):1290-307</RefSource>
+                    <PMID Version="1">21886097</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>EcoSal Plus. 2010 Sep;4(1):null</RefSource>
+                    <PMID Version="1">26443778</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Biotechnol. 2017 Jan;35(1):81-89</RefSource>
+                    <PMID Version="1">27893703</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>BMC Bioinformatics. 2010 Sep 29;11:489</RefSource>
+                    <PMID Version="1">20920235</PMID>
+                </CommentsCorrections>
+            </CommentsCorrectionsList>
+        </MedlineCitation>
+        <PubmedData>
+            <History>
+                <PubMedPubDate PubStatus="received">
+                    <Year>2016</Year>
+                    <Month>11</Month>
+                    <Day>10</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="accepted">
+                    <Year>2017</Year>
+                    <Month>01</Month>
+                    <Day>10</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="entrez">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>29</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="pubmed">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>30</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="medline">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>30</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+            </History>
+            <PublicationStatus>ppublish</PublicationStatus>
+            <ArticleIdList>
+                <ArticleId IdType="pubmed">28453682</ArticleId>
+                <ArticleId IdType="pii">btw838</ArticleId>
+                <ArticleId IdType="doi">10.1093/bioinformatics/btw838</ArticleId>
+                <ArticleId IdType="pmc">PMC5408791</ArticleId>
+            </ArticleIdList>
+        </PubmedData>
+    </PubmedArticle>
+
+
+    <PubmedArticle>
+        <MedlineCitation Status="In-Process" Owner="NLM">
+            <PMID Version="1">28381205</PMID>
+            <DateCreated>
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>06</Day>
+            </DateCreated>
+            <DateRevised>
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>27</Day>
+            </DateRevised>
+            <Article PubModel="Electronic">
+                <Journal>
+                    <ISSN IssnType="Electronic">1471-2105</ISSN>
+                    <JournalIssue CitedMedium="Internet">
+                        <Volume>18</Volume>
+                        <Issue>1</Issue>
+                        <PubDate>
+                            <Year>2017</Year>
+                            <Month>Apr</Month>
+                            <Day>05</Day>
+                        </PubDate>
+                    </JournalIssue>
+                    <Title>BMC bioinformatics</Title>
+                    <ISOAbbreviation>BMC Bioinformatics</ISOAbbreviation>
+                </Journal>
+                <ArticleTitle>The JBEI quantitative metabolic modeling library (jQMM): a python library for modeling microbial metabolism.</ArticleTitle>
+                <Pagination>
+                    <MedlinePgn>205</MedlinePgn>
+                </Pagination>
+                <ELocationID EIdType="doi" ValidYN="Y">10.1186/s12859-017-1615-y</ELocationID>
+                <Abstract>
+                    <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Modeling of microbial metabolism is a topic of growing importance in biotechnology. Mathematical modeling helps provide a mechanistic understanding for the studied process, separating the main drivers from the circumstantial ones, bounding the outcomes of experiments and guiding engineering approaches. Among different modeling schemes, the quantification of intracellular metabolic fluxes (i.e. the rate of each reaction in cellular metabolism) is of particular interest for metabolic engineering because it describes how carbon and energy flow throughout the cell. In addition to flux analysis, new methods for the effective use of the ever more readily available and abundant -omics data (i.e. transcriptomics, proteomics and metabolomics) are urgently needed.</AbstractText>
+                    <AbstractText Label="RESULTS" NlmCategory="RESULTS">The jQMM library presented here provides an open-source, Python-based framework for modeling internal metabolic fluxes and leveraging other -omics data for the scientific study of cellular metabolism and bioengineering purposes. Firstly, it presents a complete toolbox for simultaneously performing two different types of flux analysis that are typically disjoint: Flux Balance Analysis and (13)C Metabolic Flux Analysis. Moreover, it introduces the capability to use (13)C labeling experimental data to constrain comprehensive genome-scale models through a technique called two-scale (13)C Metabolic Flux Analysis (2S-(13)C MFA). In addition, the library includes a demonstration of a method that uses proteomics data to produce actionable insights to increase biofuel production. Finally, the use of the jQMM library is illustrated through the addition of several Jupyter notebook demonstration files that enhance reproducibility and provide the capability to be adapted to the user's specific needs.</AbstractText>
+                    <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">jQMM will facilitate the design and metabolic engineering of organisms for biofuels and other chemicals, as well as investigations of cellular metabolism and leveraging -omics data. As an open source software project, we hope it will attract additions from the community and grow with the rapidly changing field of metabolic engineering.</AbstractText>
+                </Abstract>
+                <AuthorList CompleteYN="Y">
+                    <Author ValidYN="Y">
+                        <LastName>Birkel</LastName>
+                        <ForeName>Garrett W</ForeName>
+                        <Initials>GW</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>DOE Agile BioFoundry, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Ghosh</LastName>
+                        <ForeName>Amit</ForeName>
+                        <Initials>A</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>School of Energy Science and Engineering, Indian Institute of Technology (IIT), Kharagpur, India.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Kumar</LastName>
+                        <ForeName>Vinay S</ForeName>
+                        <Initials>VS</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Weaver</LastName>
+                        <ForeName>Daniel</ForeName>
+                        <Initials>D</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Ando</LastName>
+                        <ForeName>David</ForeName>
+                        <Initials>D</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Backman</LastName>
+                        <ForeName>Tyler W H</ForeName>
+                        <Initials>TWH</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>DOE Agile BioFoundry, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Arkin</LastName>
+                        <ForeName>Adam P</ForeName>
+                        <Initials>AP</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Bioengineering, University of California, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Environmental Genomics and Systems Biology Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Keasling</LastName>
+                        <ForeName>Jay D</ForeName>
+                        <Initials>JD</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Chemical and Biomolecular Engineering, University of California, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Bioengineering, University of California, Berkeley, CA, USA.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark, Hørsholm, DK2970, Denmark.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Martín</LastName>
+                        <ForeName>Héctor García</ForeName>
+                        <Initials>HG</Initials>
+                        <Identifier Source="ORCID">http://orcid.org/0000-0002-4556-9685</Identifier>
+                        <AffiliationInfo>
+                            <Affiliation>Biological Systems and Engineering Division, Lawrence Berkeley National Laboratory, Berkeley, CA, USA. hgmartin@lbl.gov.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Joint BioEnergy Institute, Emeryville, CA, USA. hgmartin@lbl.gov.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>DOE Agile BioFoundry, Emeryville, CA, USA. hgmartin@lbl.gov.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>BCAM, Basque Center for Applied Mathematics, Bilbao, Spain. hgmartin@lbl.gov.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                </AuthorList>
+                <Language>eng</Language>
+                <PublicationTypeList>
+                    <PublicationType UI="D016428">Journal Article</PublicationType>
+                </PublicationTypeList>
+                <ArticleDate DateType="Electronic">
+                    <Year>2017</Year>
+                    <Month>04</Month>
+                    <Day>05</Day>
+                </ArticleDate>
+            </Article>
+            <MedlineJournalInfo>
+                <Country>England</Country>
+                <MedlineTA>BMC Bioinformatics</MedlineTA>
+                <NlmUniqueID>100965194</NlmUniqueID>
+                <ISSNLinking>1471-2105</ISSNLinking>
+            </MedlineJournalInfo>
+            <CommentsCorrectionsList>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Bioinformatics. 2014 May 1;30(9):1333-5</RefSource>
+                    <PMID Version="1">24413674</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Metab Eng. 2007 Jan;9(1):68-86</RefSource>
+                    <PMID Version="1">17088092</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS Comput Biol. 2015 Sep 17;11(9):e1004363</RefSource>
+                    <PMID Version="1">26379153</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Chem Biol. 2010 Nov;6(11):787-9</RefSource>
+                    <PMID Version="1">20976870</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Bioinformatics. 2013 Jan 1;29(1):143-5</RefSource>
+                    <PMID Version="1">23110970</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Metab Eng. 2013 Sep;19:33-41</RefSource>
+                    <PMID Version="1">23727191</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Bacteriol. 2001 Jan;183(1):301-8</RefSource>
+                    <PMID Version="1">11114930</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cancer Cell. 2014 Jan 13;25(1):12-9</RefSource>
+                    <PMID Version="1">24434207</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Genome Biol. 2003;4(9):R54</RefSource>
+                    <PMID Version="1">12952533</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Mol Syst Biol. 2007;3:149</RefSource>
+                    <PMID Version="1">18059444</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Clin Endocrinol Metab. 2013 Jun;98(6):E1060-5</RefSource>
+                    <PMID Version="1">23633210</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Metab Eng. 2001 Jul;3(3):195-206</RefSource>
+                    <PMID Version="1">11461141</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Prod Rep. 2015 Sep 23;32(10):1508-26</RefSource>
+                    <PMID Version="1">26216573</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Chem Biol. 2014 May;10(5):319-22</RefSource>
+                    <PMID Version="1">24743245</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Metab Eng. 2015 Mar;28:123-33</RefSource>
+                    <PMID Version="1">25554074</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>BMC Syst Biol. 2013 Aug 08;7:74</RefSource>
+                    <PMID Version="1">23927696</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>ACS Chem Biol. 2008 Jan 18;3(1):17-20</RefSource>
+                    <PMID Version="1">18205287</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Proc Natl Acad Sci U S A. 2002 Nov 12;99(23):15112-7</RefSource>
+                    <PMID Version="1">12415116</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS Biol. 2014 Jan;12(1):e1001745</RefSource>
+                    <PMID Version="1">24415924</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Proc Natl Acad Sci U S A. 2005 May 24;102(21):7695-700</RefSource>
+                    <PMID Version="1">15897462</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Microb Cell Fact. 2014 Nov 19;13:152</RefSource>
+                    <PMID Version="1">25408234</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Curr Opin Biotechnol. 2015 Feb;31:73-8</RefSource>
+                    <PMID Version="1">25197792</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Metab Eng. 2014 Nov;26:48-56</RefSource>
+                    <PMID Version="1">25205128</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Trends Biotechnol. 2005 Jul;23(7):349-58</RefSource>
+                    <PMID Version="1">15923052</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cell. 2016 Mar 10;164(6):1185-97</RefSource>
+                    <PMID Version="1">26967285</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Rev Microbiol. 2012 Feb 27;10(4):291-305</RefSource>
+                    <PMID Version="1">22367118</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>BMC Syst Biol. 2012 May 16;6:43</RefSource>
+                    <PMID Version="1">22591686</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Protoc. 2007;2(3):727-38</RefSource>
+                    <PMID Version="1">17406635</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Biotechnol Bioeng. 2014 Aug;111(8):1648-58</RefSource>
+                    <PMID Version="1">24615242</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Methods. 2014 Sep;11(9):895-8</RefSource>
+                    <PMID Version="1">25166868</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Appl Environ Microbiol. 2014 Jan;80(2):497-505</RefSource>
+                    <PMID Version="1">24212572</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Microb Cell Fact. 2009 May 01;8:25</RefSource>
+                    <PMID Version="1">19409084</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Am J Physiol Endocrinol Metab. 2014 Aug 1;307(3):E262-77</RefSource>
+                    <PMID Version="1">24918202</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nature. 2000 Nov 9;408(6809):184-7</RefSource>
+                    <PMID Version="1">11089968</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Biotechnol Prog. 2010 Jul-Aug;26(4):975-92</RefSource>
+                    <PMID Version="1">20730757</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="ErratumIn">
+                    <RefSource>BMC Bioinformatics. 2017 Apr 18;18(1):219</RefSource>
+                    <PMID Version="1">28420344</PMID>
+                </CommentsCorrections>
+            </CommentsCorrectionsList>
+            <KeywordList Owner="NOTNLM">
+                <Keyword MajorTopicYN="N">-omics data</Keyword>
+                <Keyword MajorTopicYN="N">13 C Metabolic Flux Analysis</Keyword>
+                <Keyword MajorTopicYN="N">Flux analysis</Keyword>
+                <Keyword MajorTopicYN="N">Predictive biology</Keyword>
+            </KeywordList>
+        </MedlineCitation>
+        <PubmedData>
+            <History>
+                <PubMedPubDate PubStatus="received">
+                    <Year>2016</Year>
+                    <Month>11</Month>
+                    <Day>03</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="accepted">
+                    <Year>2017</Year>
+                    <Month>03</Month>
+                    <Day>25</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="entrez">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>7</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="pubmed">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>7</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="medline">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>7</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+            </History>
+            <PublicationStatus>epublish</PublicationStatus>
+            <ArticleIdList>
+                <ArticleId IdType="pubmed">28381205</ArticleId>
+                <ArticleId IdType="doi">10.1186/s12859-017-1615-y</ArticleId>
+                <ArticleId IdType="pii">10.1186/s12859-017-1615-y</ArticleId>
+                <ArticleId IdType="pmc">PMC5382524</ArticleId>
+            </ArticleIdList>
+        </PubmedData>
+    </PubmedArticle>
+
+
+    <PubmedArticle>
+        <MedlineCitation Status="In-Data-Review" Owner="NLM">
+            <PMID Version="1">28367990</PMID>
+            <DateCreated>
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>03</Day>
+            </DateCreated>
+            <DateRevised>
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>11</Day>
+            </DateRevised>
+            <Article PubModel="Electronic">
+                <Journal>
+                    <ISSN IssnType="Electronic">2045-2322</ISSN>
+                    <JournalIssue CitedMedium="Internet">
+                        <Volume>7</Volume>
+                        <PubDate>
+                            <Year>2017</Year>
+                            <Month>Apr</Month>
+                            <Day>03</Day>
+                        </PubDate>
+                    </JournalIssue>
+                    <Title>Scientific reports</Title>
+                    <ISOAbbreviation>Sci Rep</ISOAbbreviation>
+                </Journal>
+                <ArticleTitle>Systems approach to characterize the metabolism of liver cancer stem cells expressing CD133.</ArticleTitle>
+                <Pagination>
+                    <MedlinePgn>45557</MedlinePgn>
+                </Pagination>
+                <ELocationID EIdType="doi" ValidYN="Y">10.1038/srep45557</ELocationID>
+                <Abstract>
+                    <AbstractText>Liver cancer stem cells (LCSCs) have attracted attention because they cause therapeutic resistance in hepatocellular carcinoma (HCC). Understanding the metabolism of LCSCs can be a key to developing therapeutic strategy, but metabolic characteristics have not yet been studied. Here, we systematically analyzed and compared the global metabolic phenotype between LCSCs and non-LCSCs using transcriptome and metabolome data. We also reconstructed genome-scale metabolic models (GEMs) for LCSC and non-LCSC to comparatively examine differences in their metabolism at genome-scale. We demonstrated that LCSCs exhibited an increased proliferation rate through enhancing glycolysis compared with non-LCSCs. We also confirmed that MYC, a central point of regulation in cancer metabolism, was significantly up-regulated in LCSCs compared with non-LCSCs. Moreover, LCSCs tend to have less active fatty acid oxidation. In this study, the metabolic characteristics of LCSCs were identified using integrative systems analysis, and these characteristics could be potential cures for the resistance of liver cancer cells to anticancer treatments.</AbstractText>
+                </Abstract>
+                <AuthorList CompleteYN="Y">
+                    <Author ValidYN="Y">
+                        <LastName>Hur</LastName>
+                        <ForeName>Wonhee</ForeName>
+                        <Initials>W</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>The Catholic University Liver Research Center &amp;WHO Collaborating Center of Viral Hepatitis, College of Medicine, The Catholic University of Korea, Seoul 06591, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Ryu</LastName>
+                        <ForeName>Jae Yong</ForeName>
+                        <Initials>JY</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Metabolic and Biomolecular Engineering National Research Laboratory, Department of Chemical and Biomolecular Engineering (BK21 Plus program), Center for Systems and Synthetic Biotechnology, Institute for the BioCentury, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Kim</LastName>
+                        <ForeName>Hyun Uk</ForeName>
+                        <Initials>HU</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Metabolic and Biomolecular Engineering National Research Laboratory, Department of Chemical and Biomolecular Engineering (BK21 Plus program), Center for Systems and Synthetic Biotechnology, Institute for the BioCentury, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>BioInformatics Research Center, KAIST, Daejeon 34141, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Hong</LastName>
+                        <ForeName>Sung Woo</ForeName>
+                        <Initials>SW</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>The Catholic University Liver Research Center &amp;WHO Collaborating Center of Viral Hepatitis, College of Medicine, The Catholic University of Korea, Seoul 06591, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Lee</LastName>
+                        <ForeName>Eun Byul</ForeName>
+                        <Initials>EB</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>The Catholic University Liver Research Center &amp;WHO Collaborating Center of Viral Hepatitis, College of Medicine, The Catholic University of Korea, Seoul 06591, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Lee</LastName>
+                        <ForeName>Sang Yup</ForeName>
+                        <Initials>SY</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Metabolic and Biomolecular Engineering National Research Laboratory, Department of Chemical and Biomolecular Engineering (BK21 Plus program), Center for Systems and Synthetic Biotechnology, Institute for the BioCentury, Korea Advanced Institute of Science and Technology (KAIST), Daejeon 34141, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>BioInformatics Research Center, KAIST, Daejeon 34141, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>BioProcess Engineering Research Center, KAIST, Daejeon 34141, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Yoon</LastName>
+                        <ForeName>Seung Kew</ForeName>
+                        <Initials>SK</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>The Catholic University Liver Research Center &amp;WHO Collaborating Center of Viral Hepatitis, College of Medicine, The Catholic University of Korea, Seoul 06591, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Internal Medicine, Seoul St. Mary's Hospital, College of Medicine, The Catholic University of Korea, Seoul 06591, Republic of Korea.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                </AuthorList>
+                <Language>eng</Language>
+                <PublicationTypeList>
+                    <PublicationType UI="D016428">Journal Article</PublicationType>
+                </PublicationTypeList>
+                <ArticleDate DateType="Electronic">
+                    <Year>2017</Year>
+                    <Month>04</Month>
+                    <Day>03</Day>
+                </ArticleDate>
+            </Article>
+            <MedlineJournalInfo>
+                <Country>England</Country>
+                <MedlineTA>Sci Rep</MedlineTA>
+                <NlmUniqueID>101563288</NlmUniqueID>
+                <ISSNLinking>2045-2322</ISSNLinking>
+            </MedlineJournalInfo>
+            <CommentsCorrectionsList>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Curr Oncol Rep. 2010 May;12(3):186-92</RefSource>
+                    <PMID Version="1">20425078</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Cell Mol Med. 2008 Jan-Feb;12 (1):111-25</RefSource>
+                    <PMID Version="1">18031298</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cancer Res. 2010 Feb 1;70(3):859-62</RefSource>
+                    <PMID Version="1">20086171</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Hepatol. 2010 Sep;53(3):568-77</RefSource>
+                    <PMID Version="1">20646772</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Obes Rev. 2010 May;11(5):380-8</RefSource>
+                    <PMID Version="1">19694967</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Membr Biol. 2016 Apr;249(1-2):119-28</RefSource>
+                    <PMID Version="1">26501871</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Mol Syst Biol. 2007;3:149</RefSource>
+                    <PMID Version="1">18059444</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Hepatol. 2012 Jan;56(1):267-75</RefSource>
+                    <PMID Version="1">21782758</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Genes Cancer. 2013 Mar;4(3-4):97-104</RefSource>
+                    <PMID Version="1">24020000</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS One. 2012;7(9):e45119</RefSource>
+                    <PMID Version="1">23024800</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Proc Natl Acad Sci U S A. 2008 Dec 2;105(48):18782-7</RefSource>
+                    <PMID Version="1">19033189</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>BMC Syst Biol. 2013 Aug 08;7:74</RefSource>
+                    <PMID Version="1">23927696</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Mol Syst Biol. 2014 Mar 19;10:721</RefSource>
+                    <PMID Version="1">24646661</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Chem Biol. 2012 Jul;8(7):661-8</RefSource>
+                    <PMID Version="1">22683610</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nature. 2009 Apr 9;458(7239):762-5</RefSource>
+                    <PMID Version="1">19219026</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cancer Sci. 2009 Jul;100(7):1166-72</RefSource>
+                    <PMID Version="1">19432904</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Biochim Biophys Acta. 2011 Jul;1813(7):1269-78</RefSource>
+                    <PMID Version="1">20933024</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Protoc. 2010 Feb;5(2):303-22</RefSource>
+                    <PMID Version="1">20134430</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS One. 2015 May 01;10(5):e0125617</RefSource>
+                    <PMID Version="1">25933096</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cancer Lett. 2012 Feb 28;315 (2):129-37</RefSource>
+                    <PMID Version="1">22079466</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Cell Biol. 2014 Oct;16(10 ):992-1003, 1-15</RefSource>
+                    <PMID Version="1">25241037</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Toxicol In Vitro. 2007 Dec;21(8):1656-62</RefSource>
+                    <PMID Version="1">17826027</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Int J Mol Sci. 2015 Jan 05;16(1):950-65</RefSource>
+                    <PMID Version="1">25569080</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Exp Mol Med. 2014 Feb 21;46:e77</RefSource>
+                    <PMID Version="1">24556826</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Circ Res. 2011 Apr 15;108(8):1002-16</RefSource>
+                    <PMID Version="1">21493923</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Semin Liver Dis. 2010 Feb;30(1):3-16</RefSource>
+                    <PMID Version="1">20175029</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Mol Cancer Ther. 2013 Oct;12(10):1935-46</RefSource>
+                    <PMID Version="1">23974695</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Arterioscler Thromb Vasc Biol. 2007 Jan;27(1):63-9</RefSource>
+                    <PMID Version="1">17068288</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Clin Invest. 2013 May;123(5):1911-8</RefSource>
+                    <PMID Version="1">23635789</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Gastroenterology. 2008 May;134(6):1752-63</RefSource>
+                    <PMID Version="1">18471552</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cell Metab. 2013 Aug 6;18(2):153-61</RefSource>
+                    <PMID Version="1">23791484</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Hepatology. 2012 Mar;55(3):807-20</RefSource>
+                    <PMID Version="1">21994122</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cancer Res. 2014 Jun 15;74(12):3199-204</RefSource>
+                    <PMID Version="1">24830719</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Gastroenterol Hepatol (N Y). 2014 Mar;10(3):153-61</RefSource>
+                    <PMID Version="1">24829542</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Integr Biol (Camb). 2015 Aug;7(8):859-68</RefSource>
+                    <PMID Version="1">25730289</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Dev Cell. 2016 Mar 7;36(5):540-9</RefSource>
+                    <PMID Version="1">26954548</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS One. 2014 Jan 08;9(1):e85318</RefSource>
+                    <PMID Version="1">24416389</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS Comput Biol. 2013;9(3):e1002980</RefSource>
+                    <PMID Version="1">23555215</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Biol Chem. 2005 Apr 22;280(16):16456-60</RefSource>
+                    <PMID Version="1">15716268</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Biochem Biophys Res Commun. 1982 Apr 29;105(4):1446-52</RefSource>
+                    <PMID Version="1">6213227</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Oncotarget. 2016 Apr 26;7(17):23482-97</RefSource>
+                    <PMID Version="1">26993601</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Database (Oxford). 2015 Sep 30;2015:null</RefSource>
+                    <PMID Version="1">26424082</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Protoc. 2009;4(1):44-57</RefSource>
+                    <PMID Version="1">19131956</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Clin Cancer Res. 2009 Nov 1;15(21):6479-83</RefSource>
+                    <PMID Version="1">19861459</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS Comput Biol. 2009 Mar;5(3):e1000308</RefSource>
+                    <PMID Version="1">19282964</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Cancer Lett. 2016 Aug 10;378(2):131-41</RefSource>
+                    <PMID Version="1">27208741</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Clin Mol Hepatol. 2016 Mar;22(1):7-17</RefSource>
+                    <PMID Version="1">27044761</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Oncotarget. 2016 Aug 30;7(35):56324-56337</RefSource>
+                    <PMID Version="1">27472388</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Commun. 2014;5:3083</RefSource>
+                    <PMID Version="1">24419221</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Genome Med. 2011 Feb 22;3(2):11</RefSource>
+                    <PMID Version="1">21345246</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Oncogenesis. 2016 Jan 25;5:e189</RefSource>
+                    <PMID Version="1">26807644</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS One. 2014 Sep 18;9(9):e107941</RefSource>
+                    <PMID Version="1">25232831</PMID>
+                </CommentsCorrections>
+            </CommentsCorrectionsList>
+        </MedlineCitation>
+        <PubmedData>
+            <History>
+                <PubMedPubDate PubStatus="received">
+                    <Year>2016</Year>
+                    <Month>12</Month>
+                    <Day>01</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="accepted">
+                    <Year>2017</Year>
+                    <Month>02</Month>
+                    <Day>28</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="entrez">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>4</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="pubmed">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>4</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="medline">
+                    <Year>2017</Year>
+                    <Month>4</Month>
+                    <Day>4</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+            </History>
+            <PublicationStatus>epublish</PublicationStatus>
+            <ArticleIdList>
+                <ArticleId IdType="pubmed">28367990</ArticleId>
+                <ArticleId IdType="pii">srep45557</ArticleId>
+                <ArticleId IdType="doi">10.1038/srep45557</ArticleId>
+                <ArticleId IdType="pmc">PMC5377334</ArticleId>
+            </ArticleIdList>
+        </PubmedData>
+    </PubmedArticle>
+
+    
+    <PubmedArticle>
         <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
             <PMID Version="1">28163785</PMID>
             <DateCreated>
