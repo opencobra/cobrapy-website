@@ -12,7 +12,6 @@
   </div>
 {{ range $i, $p := .Data.Pages.GroupByDate "2006" }}
 <div class="mdl-tabs__panel {{if eq $i 0}}is-active{{end}}" id="year_{{$p.Key}}">
-<br>
 {{ range $p.Pages }}
 <div class="mdl-cell mdl-cell--12-col">
 <div class="mdl-card mdl-shadow--4dp">
@@ -31,6 +30,9 @@
 </div>
 </div></div>
 {{end}}
+<div class="mdl-cell mdl-cell--12-col">
+<h6>Total of {{len $p.Pages}} publications. 😄</h6>
+</div>
 </div>
 {{end}}</div>
 {{ partial "footer.html" . }}
