@@ -1,5 +1,318 @@
 <PubmedArticleList>
     <PubmedArticle>
+        <MedlineCitation Status="In-Data-Review" Owner="NLM">
+            <PMID Version="1">28623298</PMID>
+            <DateCreated>
+                <Year>2017</Year>
+                <Month>06</Month>
+                <Day>17</Day>
+            </DateCreated>
+            <DateRevised>
+                <Year>2017</Year>
+                <Month>07</Month>
+                <Day>14</Day>
+            </DateRevised>
+            <Article PubModel="Electronic">
+                <Journal>
+                    <ISSN IssnType="Electronic">2045-2322</ISSN>
+                    <JournalIssue CitedMedium="Internet">
+                        <Volume>7</Volume>
+                        <Issue>1</Issue>
+                        <PubDate>
+                            <Year>2017</Year>
+                            <Month>Jun</Month>
+                            <Day>16</Day>
+                        </PubDate>
+                    </JournalIssue>
+                    <Title>Scientific reports</Title>
+                    <ISOAbbreviation>Sci Rep</ISOAbbreviation>
+                </Journal>
+                <ArticleTitle>Constraint-based modeling identifies new putative targets to fight colistin-resistant A. baumannii infections.</ArticleTitle>
+                <Pagination>
+                    <MedlinePgn>3706</MedlinePgn>
+                </Pagination>
+                <ELocationID EIdType="doi" ValidYN="Y">10.1038/s41598-017-03416-2</ELocationID>
+                <Abstract>
+                    <AbstractText>Acinetobacter baumannii is a clinical threat to human health, causing major infection outbreaks worldwide. As new drugs against Gram-negative bacteria do not seem to be forthcoming, and due to the microbial capability of acquiring multi-resistance, there is an urgent need for novel therapeutic targets. Here we have derived a list of new potential targets by means of metabolic reconstruction and modelling of A. baumannii ATCC 19606. By integrating constraint-based modelling with gene expression data, we simulated microbial growth in normal and stressful conditions (i.e. following antibiotic exposure). This allowed us to describe the metabolic reprogramming that occurs in this bacterium when treated with colistin (the currently adopted last-line treatment) and identify a set of genes that are primary targets for developing new drugs against A. baumannii, including colistin-resistant strains. It can be anticipated that the metabolic model presented herein will represent a solid and reliable resource for the future treatment of A. baumannii infections.</AbstractText>
+                </Abstract>
+                <AuthorList CompleteYN="Y">
+                    <Author ValidYN="Y">
+                        <LastName>Presta</LastName>
+                        <ForeName>Luana</ForeName>
+                        <Initials>L</Initials>
+                        <Identifier Source="ORCID">http://orcid.org/0000-0001-6482-6758</Identifier>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Biology, University of Florence, Florence, Italy.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Bosi</LastName>
+                        <ForeName>Emanuele</ForeName>
+                        <Initials>E</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Biology, University of Florence, Florence, Italy.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Mansouri</LastName>
+                        <ForeName>Leila</ForeName>
+                        <Initials>L</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Biology, University of Florence, Florence, Italy.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Dijkshoorn</LastName>
+                        <ForeName>Lenie</ForeName>
+                        <Initials>L</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Infectious Diseases, Leiden University Medical Center, Leiden, The Netherlands.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Fani</LastName>
+                        <ForeName>Renato</ForeName>
+                        <Initials>R</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Biology, University of Florence, Florence, Italy.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                    <Author ValidYN="Y">
+                        <LastName>Fondi</LastName>
+                        <ForeName>Marco</ForeName>
+                        <Initials>M</Initials>
+                        <AffiliationInfo>
+                            <Affiliation>Department of Biology, University of Florence, Florence, Italy. marco.fondi@unifi.it.</Affiliation>
+                        </AffiliationInfo>
+                    </Author>
+                </AuthorList>
+                <Language>eng</Language>
+                <PublicationTypeList>
+                    <PublicationType UI="D016428">Journal Article</PublicationType>
+                </PublicationTypeList>
+                <ArticleDate DateType="Electronic">
+                    <Year>2017</Year>
+                    <Month>06</Month>
+                    <Day>16</Day>
+                </ArticleDate>
+            </Article>
+            <MedlineJournalInfo>
+                <Country>England</Country>
+                <MedlineTA>Sci Rep</MedlineTA>
+                <NlmUniqueID>101563288</NlmUniqueID>
+                <ISSNLinking>2045-2322</ISSNLinking>
+            </MedlineJournalInfo>
+            <CommentsCorrectionsList>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS Genet. 2009 Jan;5(1):e1000329</RefSource>
+                    <PMID Version="1">19132081</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nucleic Acids Res. 2016 Jan 4;44(D1):D523-6</RefSource>
+                    <PMID Version="1">26527720</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nucleic Acids Res. 2006 Jan 1;34(Database issue):D181-6</RefSource>
+                    <PMID Version="1">16381841</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Appl Environ Microbiol. 2002 Dec;68(12):6353-60</RefSource>
+                    <PMID Version="1">12450860</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Mol Syst Biol. 2009;5:320</RefSource>
+                    <PMID Version="1">19888215</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Genome Biol. 2003;4(9):R54</RefSource>
+                    <PMID Version="1">12952533</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Bioinformatics. 2011 Feb 15;27(4):541-7</RefSource>
+                    <PMID Version="1">21172910</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS Comput Biol. 2014 Apr 24;10(4):e1003580</RefSource>
+                    <PMID Version="1">24762745</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>BMC Syst Biol. 2013 Aug 08;7:74</RefSource>
+                    <PMID Version="1">23927696</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>BMC Syst Biol. 2008 Oct 07;2:85</RefSource>
+                    <PMID Version="1">18840283</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>MBio. 2014 Jun 03;5(3):e01163-14</RefSource>
+                    <PMID Version="1">24895306</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Proc Natl Acad Sci U S A. 2002 Nov 12;99(23):15112-7</RefSource>
+                    <PMID Version="1">12415116</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS Comput Biol. 2005 Oct;1(5):e46</RefSource>
+                    <PMID Version="1">16261191</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Mol Syst Biol. 2007;3:121</RefSource>
+                    <PMID Version="1">17593909</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Metab Eng. 2003 Oct;5(4):264-76</RefSource>
+                    <PMID Version="1">14642354</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Antimicrob Chemother. 2015 May;70(5):1303-13</RefSource>
+                    <PMID Version="1">25587995</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nucleic Acids Res. 2007 Jan;35(Database issue):D274-9</RefSource>
+                    <PMID Version="1">17135193</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Pathog. 2016;2016:7318075</RefSource>
+                    <PMID Version="1">26966582</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>PLoS One. 2012;7(10):e46984</RefSource>
+                    <PMID Version="1">23144699</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Protoc. 2011 Aug 04;6(9):1290-307</RefSource>
+                    <PMID Version="1">21886097</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nucleic Acids Res. 2016 Jan 4;44(D1):D515-22</RefSource>
+                    <PMID Version="1">26476456</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Biotechnol. 2010 Sep;28(9):977-82</RefSource>
+                    <PMID Version="1">20802497</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Mol Biol. 1990 Oct 5;215(3):403-10</RefSource>
+                    <PMID Version="1">2231712</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Genome Announc. 2014 Aug 21;2(4):null</RefSource>
+                    <PMID Version="1">25146140</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Antimicrob Chemother. 2012 Jul;67(7):1607-15</RefSource>
+                    <PMID Version="1">22441575</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Bacteriol. 2009 Jun;191(12):4015-24</RefSource>
+                    <PMID Version="1">19376871</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Infect. 2006 Oct;53(4):274-8</RefSource>
+                    <PMID Version="1">16442632</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Mol Biol. 2001 Dec 14;314(5):1041-52</RefSource>
+                    <PMID Version="1">11743721</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Bacteriol. 2005 Aug;187(16):5818-30</RefSource>
+                    <PMID Version="1">16077130</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Proc Natl Acad Sci U S A. 2013 Dec 10;110(50):20338-43</RefSource>
+                    <PMID Version="1">24277855</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Biotechnol. 2010 Mar;28(3):245-8</RefSource>
+                    <PMID Version="1">20212490</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Mol Biosyst. 2010 Feb;6(2):339-48</RefSource>
+                    <PMID Version="1">20094653</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nucleic Acids Res. 2017 Jan 4;45(D1):D353-D361</RefSource>
+                    <PMID Version="1">27899662</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>FEMS Microbiol Lett. 1999 May 15;174(2):311-9</RefSource>
+                    <PMID Version="1">10339824</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Rev Microbiol. 2007 Dec;5(12):939-51</RefSource>
+                    <PMID Version="1">18007677</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>J Infect Dis. 2008 Apr 15;197(8):1079-81</RefSource>
+                    <PMID Version="1">18419525</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Genome Biol. 2008;9(9):R140</RefSource>
+                    <PMID Version="1">18808699</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Ups J Med Sci. 2014 May;119(2):149-53</RefSource>
+                    <PMID Version="1">24666223</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Nat Protoc. 2010 Jan;5(1):93-121</RefSource>
+                    <PMID Version="1">20057383</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Proc Natl Acad Sci U S A. 2012 May 1;109(18):E1121-30</RefSource>
+                    <PMID Version="1">22509034</PMID>
+                </CommentsCorrections>
+                <CommentsCorrections RefType="Cites">
+                    <RefSource>Antimicrob Agents Chemother. 2010 Dec;54(12):4971-7</RefSource>
+                    <PMID Version="1">20855724</PMID>
+                </CommentsCorrections>
+            </CommentsCorrectionsList>
+        </MedlineCitation>
+        <PubmedData>
+            <History>
+                <PubMedPubDate PubStatus="received">
+                    <Year>2016</Year>
+                    <Month>09</Month>
+                    <Day>14</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="accepted">
+                    <Year>2017</Year>
+                    <Month>04</Month>
+                    <Day>26</Day>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="entrez">
+                    <Year>2017</Year>
+                    <Month>6</Month>
+                    <Day>18</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="pubmed">
+                    <Year>2017</Year>
+                    <Month>6</Month>
+                    <Day>18</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+                <PubMedPubDate PubStatus="medline">
+                    <Year>2017</Year>
+                    <Month>6</Month>
+                    <Day>18</Day>
+                    <Hour>6</Hour>
+                    <Minute>0</Minute>
+                </PubMedPubDate>
+            </History>
+            <PublicationStatus>epublish</PublicationStatus>
+            <ArticleIdList>
+                <ArticleId IdType="pubmed">28623298</ArticleId>
+                <ArticleId IdType="doi">10.1038/s41598-017-03416-2</ArticleId>
+                <ArticleId IdType="pii">10.1038/s41598-017-03416-2</ArticleId>
+                <ArticleId IdType="pmc">PMC5473915</ArticleId>
+            </ArticleIdList>
+        </PubmedData>
+    </PubmedArticle>
+    <PubmedArticle>
         <MedlineCitation Status="In-Process" Owner="NLM">
             <PMID Version="1">28453682</PMID>
             <DateCreated>
