@@ -5,6 +5,9 @@ relativeURLs = true
 preserveTaxonomyNames = true
 enableemoji = true
 
+pygmentsCodefences = true
+pygmentsStyle = "colorful"
+
 [params]
     mdlversion = "1.3.0"
     mdltheme = "teal-indigo"

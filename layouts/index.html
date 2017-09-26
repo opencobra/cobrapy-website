@@ -6,7 +6,7 @@
 {{ range $i, $p := where .Data.Pages "Section" "intro" }}
 <div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-phone mdl-cell--8-col-tablet
             {{ if eq (mod $i 2) 1 }}mdl-shadow--4dp dark {{ index $backgrounds (mod (div $i 2) (len $backgrounds)) }}{{ end }}">
-<div class="highlight">
+<div class="intro">
 <h3>{{ $p.Title }}</h3>
 {{ $p.Content }}
 </div></div>
