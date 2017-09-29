@@ -20,5 +20,6 @@ deploy:
   repo: $GITHUB_REPO
   local_dir: public
   on:
-    branch: master
+    #    branch: master
+    all_branches: true
     repo: $GITHUB_REPO
