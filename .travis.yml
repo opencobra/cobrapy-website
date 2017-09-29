@@ -3,7 +3,7 @@ sudo: false
 
 env:
   global:
-    - GITHUB_REPO: opencobra/cobrapy
+    - GITHUB_REPO: Midnighter/dummy-site
     - HUGO_VER: 0.25.1
 
 install:
