@@ -4,8 +4,12 @@ sudo: false
 env:
   global:
     - GITHUB_REPO: opencobra/cobrapy
-    - HUGO_VER: 0.29
+    - HUGO_VER: "0.29"
     - HUGO_DIR: public
+
+cache:
+  directories:
+  - /tmp/hugo_cache
 
 install:
   - wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VER}/hugo_${HUGO_VER}_Linux-64bit.tar.gz -O hugo.tar.gz
