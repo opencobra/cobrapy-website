@@ -9,7 +9,7 @@
 <div class="mdl-cell mdl-cell--12-col ">
 <div class="mdl-card mdl-shadow--4dp"><div class="mdl-card__supporting-text tags">
 {{ range .Site.Taxonomies.tags.ByCount }}
-<a href="/tags/{{ .Name | urlize }}"class="mdl-badge {{ if ne $.Title (.Name | urlize) }}mdl-color-text--grey-500{{ end }}" data-badge="{{ .Count }}">{{ .Name }}</a>
+<a href="/tags/{{ .Name | urlize }}" class="mdl-badge {{ if ne ($.Title | urlize) (.Name | urlize) }}mdl-color-text--grey-500{{ end }}" data-badge="{{ .Count }}">{{ .Name }}</a>
 {{ end }}
 </div></div></div>
 </section></div>
