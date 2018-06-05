@@ -4,7 +4,7 @@ sudo: false
 env:
   global:
     - GITHUB_REPO: opencobra/cobrapy
-    - HUGO_VER: "0.30"
+    - HUGO_VER: "0.41"
     - HUGO_DIR: public
 
 install:
