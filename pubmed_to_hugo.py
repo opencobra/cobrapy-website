@@ -57,6 +57,5 @@ if __name__ == "__main__":
                              int(date.find("Day").text)).isoformat()
         print(article["keywords"])
         filename = "content/pubs/PM{}.md".format(article["pmid"])
-        if not exists(filename):
-            with open(filename, "w") as f:
-                f.write(template.render(**article))
+        with open(filename, "w") as f:
+            f.write(template.render(**article))

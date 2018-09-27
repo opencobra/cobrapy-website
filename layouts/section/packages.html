@@ -24,7 +24,7 @@
 {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
 {{ if $is_github }}
 {{ $repo := index (split .Params.repo "github.com/") 1}}
-{{ $data_github := getJSON "http://api.github.com/repos/" $repo }}
+{{ $data_github := getJSON "https://api.github.com/repos/" $repo }}
 {{ $.Scratch.Set "stars" $data_github.stargazers_count }}
 {{ else }}
 {{ $.Scratch.Set "stars"  0 }}
