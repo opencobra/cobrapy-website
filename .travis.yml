@@ -4,7 +4,7 @@ sudo: false
 env:
   global:
     - GITHUB_REPO: opencobra/cobrapy
-    - HUGO_VER: "0.41"
+    - HUGO_VER: "0.59.0"
     - HUGO_DIR: public
 
 install:
@@ -12,7 +12,7 @@ install:
   - tar xvzf hugo.tar.gz
 
 script:
-  - ./hugo --cacheDir=hugo_cache -d "${HUGO_DIR}"
+  - ./hugo -d "${HUGO_DIR}"
 
 deploy:
   provider: pages
