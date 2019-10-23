@@ -14,3 +14,8 @@ pygmentsStyle = "friendly"
 
 [taxonomies]
     tag = "tags"
+
+[caches]
+[caches.getjson]
+dir = ":resourceDir/_gen"
+maxAge = -1

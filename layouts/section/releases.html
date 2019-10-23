@@ -1,24 +1,31 @@
 {{ partial "header.html" . }}
 <div class="mdl-cell mdl-cell--12-col">
     <div class="mdl-card mdl-shadow--4dp">
-    <div class="mdl-card__title mdl-color--indigo-900" style="height:auto">
-    <div class="mdl-card__title-text mdl-color-text--white">Releases</div>
-</div></div></div>
-{{ range .Data.Pages }}
+        <div class="mdl-card__title mdl-color--indigo-900" style="height:auto">
+            <div class="mdl-card__title-text mdl-color-text--white">Releases</div>
+        </div>
+    </div>
+</div>
+{{ range .RegularPages }}
 {{ $info := (index $.Site.Data.releases .Params.release) }}
 <div class="mdl-cell mdl-cell--6-col">
-<div class="mdl-card mdl-shadow--4dp">
-<div class="mdl-card__supporting-text">
-<span class="spaced"><a href="https://github.com/opencobra/cobrapy/releases/tag/{{.Title}}"><h1 class="mdl-color-text--accent header">{{ .Title }}</h1></a>
-<h2 class="{{$info.color}} header">{{ .Params.release }} release</h2></span>
-<p class="mdl-typography--caption mdl-color-text--grey-500">{{ $info.description }}</p>
-{{ if .Content }}{{ if .Truncated }}<p>{{ .Summary }}</p>{{ else }}{{ .Content }}{{ end }}{{ end }}
+    <div class="mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__supporting-text">
+            <span class="spaced"><a href="https://github.com/opencobra/cobrapy/releases/tag/{{.Title}}">
+                    <h1 class="mdl-color-text--accent header">{{ .Title }}</h1>
+                </a>
+                <h2 class="{{$info.color}} header">{{ .Params.release }} release</h2>
+            </span>
+            <p class="mdl-typography--caption mdl-color-text--grey-500">{{ $info.description }}</p>
+            {{ if .Content }}{{ if .Truncated }}<p>{{ .Summary }}</p>{{ else }}{{ .Content }}{{ end }}{{ end }}
+        </div>
+        {{ if and .Content .Truncated }}
+        <div class="mdl-card__actions">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
+                href="{{ .LinkTitle }}">Read more</a>
+        </div>
+        {{ end }}
+    </div>
 </div>
-{{ if and .Content .Truncated }}
-<div class="mdl-card__actions">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent" href="{{ .LinkTitle }}">Read more</a>
-</div>
-{{ end }}
-</div></div>
 {{end}}
 {{ partial "footer.html" . }}

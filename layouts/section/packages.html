@@ -1,64 +1,79 @@
 {{ partial "header_no_grid.html" . }}
 <div class="page-content mdl-grid">
-<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-<div class="mdl-tabs__tab-bar">
-  <a href="#all" class="mdl-tabs__tab is-active">All</a>
-  <a href="#tags" class="mdl-tabs__tab">By Tag</a>
-</div>
-<section class="mdl-tabs__panel is-active" id="all">
-<div class="mdl-cell mdl-cell--12-col">
+  <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-tabs__tab-bar">
+      <a href="#all" class="mdl-tabs__tab is-active">All</a>
+      <a href="#tags" class="mdl-tabs__tab">By Tag</a>
+    </div>
+    <section class="mdl-tabs__panel is-active" id="all">
+      <div class="mdl-cell mdl-cell--12-col">
+        <div class="mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__title mdl-color--indigo-900" style="height:auto">
+            <div class="mdl-card__title-text mdl-color-text--white">Packages</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mdl-tabs__panel" id="tags">
+      <div class="mdl-cell mdl-cell--12-col ">
+        <div class="mdl-card mdl-shadow--4dp">
+          <div class="mdl-card__supporting-text tags">
+            {{ range .Site.Taxonomies.tags.ByCount }}
+            <a href="/tags/{{ .Name | urlize }}" class="mdl-badge mdl-color-text--grey-500"
+              data-badge="{{ .Count }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  {{ range .RegularPages.ByTitle }}
+  {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
+  {{ if $is_github }}
+  {{ $repo := index (split .Params.repo "github.com/") 1}}
+  {{ $data_github := getJSON "https://api.github.com/repos/" $repo }}
+  {{ $.Scratch.Set "stars" $data_github.stargazers_count }}
+  {{ else }}
+  {{ $.Scratch.Set "stars"  0 }}
+  {{ end }}
+  {{ $.Scratch.Add "packages" (slice (dict "page" . "stars" ($.Scratch.Get "stars")))}}
+  {{ end }}
+
+  {{ range (sort ($.Scratch.Get "packages") "stars" "desc") }}
+  {{ $p := .page }}
+  {{ $is_github := ge (len (findRE "github.com" $p.Params.repo)) 1 }}
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
     <div class="mdl-card mdl-shadow--4dp">
-    <div class="mdl-card__title mdl-color--indigo-900" style="height:auto">
-    <div class="mdl-card__title-text mdl-color-text--white">Packages</div></div>
-</div></div></section>
-<section class="mdl-tabs__panel" id="tags">
-<div class="mdl-cell mdl-cell--12-col ">
-<div class="mdl-card mdl-shadow--4dp"><div class="mdl-card__supporting-text tags">
-{{ range .Site.Taxonomies.tags.ByCount }}
-<a href="/tags/{{ .Name | urlize }}"class="mdl-badge mdl-color-text--grey-500" data-badge="{{ .Count }}">{{ .Name }}</a>
-{{ end }}
-</div></div></div>
-</section></div>
-
-{{ range .Pages.ByTitle }}
-{{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
-{{ if $is_github }}
-{{ $repo := index (split .Params.repo "github.com/") 1}}
-{{ $data_github := getJSON "https://api.github.com/repos/" $repo }}
-{{ $.Scratch.Set "stars" $data_github.stargazers_count }}
-{{ else }}
-{{ $.Scratch.Set "stars"  0 }}
-{{ end }}
-{{ $.Scratch.Add "packages" (slice (dict "page" . "stars" ($.Scratch.Get "stars")))}}
-{{ end }}
-
-{{ range (sort ($.Scratch.Get "packages") "stars" "desc") }}
-{{ $p := .page }}
-{{ $is_github := ge (len (findRE "github.com" $p.Params.repo)) 1 }}
-<div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
-<div class="mdl-card mdl-shadow--4dp">
-<div class="mdl-card__supporting-text">
-<a href="{{ $p.Params.website }}"><h1 class="mdl-color-text--accent header">{{ $p.Title }}</h1></a>
-<span class="spaced"><h2 class="mdl-color-text--primary header">by {{ $p.Params.owner }}</h2>
-{{ if $is_github }}
-{{ $repo := index (split $p.Params.repo "github.com/") 1}}
-<span>
-<img src="https://img.shields.io/github/license/{{$repo}}.svg"/>
-<img src="https://img.shields.io/github/stars/{{$repo}}.svg?style=social&label=Star"/>
-</span>
-{{ end }}</span>
-<p class="mdl-typography--caption" style="margin-top: .5em">Tags: {{ delimit (apply $p.Params.tags "partial" "tag_link" ".") ", "}}</p>
-<br>
-{{ $p.Content }}
-</div>
-<div class="mdl-card__actions mdl-card--border">
-{{  if $p.Params.repo }}
-<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
-   href="{{ $p.Params.repo }}"><i class="material-icons">code</i>&nbsp;Repository</a>
-{{ end }}
-<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
-    href="{{ $p.Params.website }}"><i class="material-icons">link</i>&nbsp;Webpage</a>
-</div></div></div>
-{{ end }}
+      <div class="mdl-card__supporting-text">
+        <a href="{{ $p.Params.website }}">
+          <h1 class="mdl-color-text--accent header">{{ $p.Title }}</h1>
+        </a>
+        <span class="spaced">
+          <h2 class="mdl-color-text--primary header">by {{ $p.Params.owner }}</h2>
+          {{ if $is_github }}
+          {{ $repo := index (split $p.Params.repo "github.com/") 1}}
+          <span>
+            <img src="https://img.shields.io/github/license/{{$repo}}.svg" />
+            <img src="https://img.shields.io/github/stars/{{$repo}}.svg?style=social&label=Star" />
+          </span>
+          {{ end }}
+        </span>
+        <p class="mdl-typography--caption" style="margin-top: .5em">Tags:
+          {{ delimit (apply $p.Params.tags "partial" "tag_link" ".") ", "}}</p>
+        <br>
+        {{ $p.Content }}
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        {{  if $p.Params.repo }}
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
+          href="{{ $p.Params.repo }}"><i class="material-icons">code</i>&nbsp;Repository</a>
+        {{ end }}
+        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-color-text--accent"
+          href="{{ $p.Params.website }}"><i class="material-icons">link</i>&nbsp;Webpage</a>
+      </div>
+    </div>
+  </div>
+  {{ end }}
 </div>
 {{ partial "footer_no_grid.html" . }}
