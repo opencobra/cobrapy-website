@@ -14,7 +14,7 @@
 </div></div></div>
 </section></div>
 
-{{ range .Pages.ByLinkTitle.Reverse }}
+{{ range .Pages.ByLinkTitle }}
 {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
 <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--8-col-tablet">
 <div class="mdl-card mdl-shadow--4dp">
