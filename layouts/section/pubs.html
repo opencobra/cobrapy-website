@@ -8,7 +8,7 @@
 </div>
 <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
     <div class="mdl-tabs__tab-bar">
-        {{ range $i, $p := .Pages.GroupByDate "2006" }}
+        {{ range $i, $p := .RegularPages.GroupByDate "2006" }}
         <a href="#year_{{$p.Key}}" class="mdl-tabs__tab {{if eq $i 0}}is-active{{end}}">{{$p.Key}}</a>
         {{end}}
     </div>
