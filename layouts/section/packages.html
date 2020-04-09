@@ -27,8 +27,8 @@
       </div>
     </section>
   </div>
+  {{ range .Pages.ByTitle }}
 
-  {{ range .RegularPages.ByTitle }}
   {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
   {{ if $is_github }}
   {{ $repo := index (split .Params.repo "github.com/") 1}}
