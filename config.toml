@@ -5,8 +5,11 @@ relativeURLs = true
 preserveTaxonomyNames = true
 enableemoji = true
 
-pygmentsCodefences = true
-pygmentsStyle = "friendly"
+[markup]
+  [markup.highlight]
+    codeFences = true
+    style = "friendly"
+    tabWidth = 4
 
 [params]
     mdlversion = "1.3.0"

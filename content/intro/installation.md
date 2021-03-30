@@ -13,10 +13,10 @@ $ pip install cobra
 
 will be enough. On Windows substitute pip with pip.exe.
 
-If you want to install all optional dependencies as well just install with
+Or install cobrapy with conda from conda-forge:
 
 ```
-$ pip install cobra[all]
+$ conda install -c conda-forge cobra
 ```
 
 For futher help refer to the [detailed installation instructions](https://github.com/opencobra/cobrapy/blob/devel/INSTALL.rst).
