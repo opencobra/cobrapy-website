@@ -2,8 +2,6 @@
 
 from sys import argv
 from jinja2 import Environment
-from os.path import exists
-from datetime import date as da
 import pandas as pd
 
 MD = """+++
@@ -19,9 +17,12 @@ keywords = [{{keywords}}]
 
 {{abstract}}"""
 
+template = Environment().from_string(MD)
+
 
 def write_entry(article):
     filename = "content/pubs/PM{}.md".format(article["pmid"])
+    article["authors"] = ", ".join('"' + name.replace('"', "\\") + '"' for name in article["authors"])
     with open(filename, "w") as f:
         f.write(template.render(**article))
 
@@ -42,5 +43,8 @@ if __name__ == "__main__":
         "doi",
     ]
     articles["date"] = articles["date"].str.replace("/", "-")
+    articles["authors"] = articles["authors"].str.split(",\s*")
+    articles["title"] = articles["title"].str.replace('"', '\\"').str.replace("\n", "")
+    print(f"Found {articles.shape[0]} articles.")
 
     articles.apply(write_entry, axis=1)
