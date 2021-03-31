@@ -26,6 +26,8 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
+          user_name: 'cobrapy-bot'
+          user_email: 'cobrapy-bot@users.noreply.github.com'
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: opencobra/cobrapy
           publish_dir: ./public
