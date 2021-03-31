@@ -24,9 +24,9 @@ jobs:
         run: hugo -d public
 
       - name: Deploy
-        if: "false"  # uncomment when the token is set
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           external_repository: opencobra/cobrapy
+          publish_dir: ./public
           publish_branch: gh-pages
