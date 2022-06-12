@@ -2,7 +2,7 @@
 title = "StrainDesign"
 repo = "https://github.com/klamt-lab/straindesign"
 date = "2022-05-31T12:00:00"
-owner = "Philipp Schneider, Steffen Klamt"
+owner = "Philipp Schneider, Pavlos Stephanos Bekiaris, Axel von Kamp, Steffen Klamt"
 website = "https://readthedocs.org/projects/straindesign"
 tags = ["strain-design", "visualization", "cell-factories"]
 +++
