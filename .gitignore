@@ -3,3 +3,4 @@ public
 hugo
 hugo.tar.gz
 .vscode
+.hugo_build.lock
