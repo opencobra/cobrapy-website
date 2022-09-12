@@ -27,6 +27,8 @@
       </div>
     </section>
   </div>
+  {{ $.Scratch.Delete "packages" }}
+  {{ $.Scratch.Delete "stars" }}
   {{ range .RegularPages.ByTitle }}
 
   {{ $is_github := ge (len (findRE "github.com" .Params.repo)) 1 }}
