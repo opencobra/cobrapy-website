@@ -4,7 +4,7 @@ title = "Getting Help"
 +++
 
 The documentation is browsable online at
-[readthedocs](https://cobrapy.readthedocs.org/en/latest/) and can
+[readthedocs](https://cobrapy.readthedocs.org/) and can
 also be
 [downloaded](https://readthedocs.org/projects/cobrapy/downloads/).
 
