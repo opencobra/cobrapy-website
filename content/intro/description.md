@@ -32,3 +32,5 @@ pi_e      3.17  h_e     9.11
 ```
 **cobrapy** is a community-supported effort under active development and is licensed under
 the GPL.
+
+{{< figure src="media/COBRA2018-CobrapyPoster.svg" >}}
