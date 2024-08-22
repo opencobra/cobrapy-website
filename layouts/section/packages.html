@@ -61,8 +61,11 @@
           </span>
           {{ end }}
         </span>
-        <p class="mdl-typography--caption" style="margin-top: .5em">Tags:
-          {{ delimit (apply $p.Params.tags "partial" "tag_link" ".") ", "}}</p>
+        <p class="mdl-typography--caption" style="margin-top: .5em">
+          Tags: {{ range $i, $e := $p.Params.tags }}
+            {{ if $i }}, {{ end }}{{ partial "tag_link.html" $e }}
+          {{ end }}
+        </p>
         <br>
         {{ $p.Content }}
       </div>

@@ -43,7 +43,7 @@ if __name__ == "__main__":
         "doi",
     ]
     articles["date"] = articles["date"].str.replace("/", "-")
-    articles["authors"] = articles["authors"].str.split(",\s*")
+    articles["authors"] = articles["authors"].str.split(",\\s*")
     articles["title"] = articles["title"].str.replace('"', '\\"').str.replace("\n", "")
     print(f"Found {articles.shape[0]} articles.")
 
