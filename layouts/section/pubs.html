@@ -37,7 +37,7 @@
         </div>
         {{end}}
         <div class="mdl-cell mdl-cell--12-col">
-            <h6>Total of {{len $p.Pages}} publications. 😄</h6>
+            <h6>{{len $p.Pages}} PubMed publications in {{$p.Key}}. {{len $.Page.RegularPages}} in total. 😄</h6>
         </div>
     </div>
     {{end}}
