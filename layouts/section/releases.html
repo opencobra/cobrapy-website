@@ -7,7 +7,7 @@
     </div>
 </div>
 {{ range .RegularPages }}
-{{ $info := (index $.Site.Data.releases .Params.release) }}
+{{ $info := (index hugo.Data.releases .Params.release) }}
 <div class="mdl-cell mdl-cell--6-col">
     <div class="mdl-card mdl-shadow--4dp">
         <div class="mdl-card__supporting-text">

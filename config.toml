@@ -19,6 +19,6 @@ enableemoji = true
     tag = "tags"
 
 [caches]
-[caches.getjson]
-dir = ":resourceDir/_gen"
+[caches.getresource]
+dir = ":resourceDir/:project"
 maxAge = -1
