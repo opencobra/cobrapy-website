@@ -4,8 +4,7 @@ repo = "https://github.com/bisect-group/spectra-cobra"
 date = "2026-10-04T12:00:00"
 owner = "Pavan Kumar S"
 website = "https://spectra-cobra.readthedocs.io"
-tags = ["context-specific models", "gap-filling", "community gap-filling",
-"minimal microbiome", "flux consistency", "omics integration"]
+tags = ["reconstruction", "flux consistency"]
 +++
 
 SPECTRA checks flux consistency and reconstructs metabolic networks at a
